@@ -14,7 +14,7 @@ public class AssertHelper {
     }
   }
 
-  public func fail(message: String, _ file: String, _ line: UInt) {
+  public func fail(message: String, file: String, line: UInt) {
     XCTFail(message, file: file, line: line)
   }
 }

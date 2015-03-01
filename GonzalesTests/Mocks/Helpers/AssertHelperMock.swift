@@ -15,7 +15,7 @@ public class AssertHelperMock: AssertHelper {
     super.init()
   }
 
-  public override func fail(message: String, _ file: String, _ line: UInt) {
+  public override func fail(message: String, file: String, line: UInt) {
     failWasCalled = true
     failFile = file
     failLine = line

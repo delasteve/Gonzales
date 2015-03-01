@@ -32,7 +32,7 @@ public class IntMatcher {
     if comparison {
       var message = assertHelper.buildMessage("Expected <\(actual)> to", "equal <\(expected)>", negate: negate)
 
-      assertHelper.fail(message, file, line)
+      assertHelper.fail(message, file: file, line: line)
     }
   }
 }
