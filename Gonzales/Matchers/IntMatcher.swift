@@ -3,7 +3,7 @@ public class IntMatcher {
   private var assertHelper: AssertHelper
   private var negate: Bool
 
-  public init(_ actual: Int, _ assertHelper: AssertHelper) {
+  public init(_ actual: Int, assertHelper: AssertHelper) {
     self.actual = actual
     self.assertHelper = assertHelper
     self.negate = false

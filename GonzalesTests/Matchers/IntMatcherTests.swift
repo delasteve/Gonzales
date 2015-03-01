@@ -7,7 +7,7 @@ class IntMatcherTests: XCTestCase {
 
   override func setUp() {
     helperMock = AssertHelperMock()
-    should = IntMatcher(5, helperMock)
+    should = IntMatcher(5, assertHelper: helperMock)
   }
 
   func test_be_property_that_returns_itself() {
