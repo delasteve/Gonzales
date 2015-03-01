@@ -11,6 +11,8 @@
 		07A51D371AA2DB830007DDFC /* IntMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D361AA2DB830007DDFC /* IntMatcherTests.swift */; };
 		07A51D3B1AA2E01E0007DDFC /* AssertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3A1AA2E01E0007DDFC /* AssertHelper.swift */; };
 		07A51D3F1AA2E1140007DDFC /* AssertHelperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3E1AA2E1140007DDFC /* AssertHelperMock.swift */; };
+		07A51D411AA2F2870007DDFC /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D401AA2F2870007DDFC /* IntExtensions.swift */; };
+		07A51D431AA2F2C20007DDFC /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D421AA2F2C20007DDFC /* IntExtensionsTests.swift */; };
 		07FE21651AA2C51200C80CDB /* Gonzales.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FE21591AA2C51200C80CDB /* Gonzales.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		07A51D361AA2DB830007DDFC /* IntMatcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntMatcherTests.swift; sourceTree = "<group>"; };
 		07A51D3A1AA2E01E0007DDFC /* AssertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertHelper.swift; sourceTree = "<group>"; };
 		07A51D3E1AA2E1140007DDFC /* AssertHelperMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertHelperMock.swift; sourceTree = "<group>"; };
+		07A51D401AA2F2870007DDFC /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		07A51D421AA2F2C20007DDFC /* IntExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
 		07FE21591AA2C51200C80CDB /* Gonzales.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gonzales.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FE215D1AA2C51200C80CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FE21641AA2C51200C80CDB /* GonzalesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GonzalesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +155,7 @@
 		07FE21751AA2C5C700C80CDB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				07A51D401AA2F2870007DDFC /* IntExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 		07FE21771AA2C5D000C80CDB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				07A51D421AA2F2C20007DDFC /* IntExtensionsTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A51D411AA2F2870007DDFC /* IntExtensions.swift in Sources */,
 				07A51D301AA2C75D0007DDFC /* IntMatcher.swift in Sources */,
 				07A51D3B1AA2E01E0007DDFC /* AssertHelper.swift in Sources */,
 			);
@@ -293,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A51D431AA2F2C20007DDFC /* IntExtensionsTests.swift in Sources */,
 				07A51D371AA2DB830007DDFC /* IntMatcherTests.swift in Sources */,
 				07A51D3F1AA2E1140007DDFC /* AssertHelperMock.swift in Sources */,
 			);
