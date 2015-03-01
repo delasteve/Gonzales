@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07FE215F1AA2C51200C80CDB /* Gonzales.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FE215E1AA2C51200C80CDB /* Gonzales.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07A51D301AA2C75D0007DDFC /* IntMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */; };
 		07FE21651AA2C51200C80CDB /* Gonzales.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FE21591AA2C51200C80CDB /* Gonzales.framework */; };
-		07FE216C1AA2C51200C80CDB /* GonzalesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE216B1AA2C51200C80CDB /* GonzalesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +22,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntMatcher.swift; sourceTree = "<group>"; };
+		07A51D321AA2C8970007DDFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		07A51D341AA2C8C80007DDFC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		07A51D351AA2C9830007DDFC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		07FE21591AA2C51200C80CDB /* Gonzales.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gonzales.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FE215D1AA2C51200C80CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07FE215E1AA2C51200C80CDB /* Gonzales.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gonzales.h; sourceTree = "<group>"; };
 		07FE21641AA2C51200C80CDB /* GonzalesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GonzalesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FE216A1AA2C51200C80CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07FE216B1AA2C51200C80CDB /* GonzalesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GonzalesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +51,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07A51D311AA2C82B0007DDFC /* GonzalesMetaData */ = {
+			isa = PBXGroup;
+			children = (
+				07A51D351AA2C9830007DDFC /* LICENSE */,
+				07A51D341AA2C8C80007DDFC /* .gitignore */,
+				07A51D321AA2C8970007DDFC /* README.md */,
+			);
+			name = GonzalesMetaData;
+			sourceTree = "<group>";
+		};
 		07FE214F1AA2C51200C80CDB = {
 			isa = PBXGroup;
 			children = (
+				07A51D311AA2C82B0007DDFC /* GonzalesMetaData */,
 				07FE215B1AA2C51200C80CDB /* Gonzales */,
 				07FE21681AA2C51200C80CDB /* GonzalesTests */,
 				07FE215A1AA2C51200C80CDB /* Products */,
@@ -71,7 +83,8 @@
 		07FE215B1AA2C51200C80CDB /* Gonzales */ = {
 			isa = PBXGroup;
 			children = (
-				07FE215E1AA2C51200C80CDB /* Gonzales.h */,
+				07FE21751AA2C5C700C80CDB /* Extensions */,
+				07FE21761AA2C5C700C80CDB /* Matchers */,
 				07FE215C1AA2C51200C80CDB /* Supporting Files */,
 			);
 			path = Gonzales;
@@ -88,7 +101,8 @@
 		07FE21681AA2C51200C80CDB /* GonzalesTests */ = {
 			isa = PBXGroup;
 			children = (
-				07FE216B1AA2C51200C80CDB /* GonzalesTests.swift */,
+				07FE21771AA2C5D000C80CDB /* Extensions */,
+				07FE21781AA2C5D000C80CDB /* Matchers */,
 				07FE21691AA2C51200C80CDB /* Supporting Files */,
 			);
 			path = GonzalesTests;
@@ -102,6 +116,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		07FE21751AA2C5C700C80CDB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		07FE21761AA2C5C700C80CDB /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		07FE21771AA2C5D000C80CDB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		07FE21781AA2C5D000C80CDB /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,7 +152,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FE215F1AA2C51200C80CDB /* Gonzales.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A51D301AA2C75D0007DDFC /* IntMatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FE216C1AA2C51200C80CDB /* GonzalesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,28 +361,37 @@
 		07FE21701AA2C51200C80CDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = Gonzales/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		07FE21711AA2C51200C80CDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = Gonzales/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -349,6 +400,7 @@
 		07FE21731AA2C51200C80CDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -360,12 +412,14 @@
 				INFOPLIST_FILE = GonzalesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		07FE21741AA2C51200C80CDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -395,6 +449,7 @@
 				07FE21711AA2C51200C80CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07FE21721AA2C51200C80CDB /* Build configuration list for PBXNativeTarget "GonzalesTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +458,7 @@
 				07FE21741AA2C51200C80CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
