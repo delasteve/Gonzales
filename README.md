@@ -1,5 +1,24 @@
 # Gonzales
 
+Gonzales is a should expectation framework. It is meant to work with any XCTest compatible framework.
+
+## Usage
+
+```swift
+import Gonzales
+import XCTest
+
+class Foo: XCTestCase {
+  func testBar() {
+    5.should.equal(5)
+  }
+}
+```
+
+## Warning
+
+This framework adds an extension property (should) to most native classes. Use at your own risk should you include this into your production code. It is meant for tests only, but no one can stop you from doing what you want.
+
 ## License
 
 The MIT License (MIT)
