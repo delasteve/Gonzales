@@ -16,20 +16,21 @@ public class BoolMatcher {
   public func truthy(file: String = __FILE__, line: UInt = __LINE__) {
     var comparison = actual != true
 
-    if comparison {
-     var message = assertHelper.buildMessage("Expected <\(actual)> to", "equal <\(true)>", negate: false)
-
-      assertHelper.fail(message, file: file, line: line)
-    }
+    failIfNecessary(comparison, expected: true, file: file, line: line)
   }
   
   public func falsy(file: String = __FILE__, line: UInt = __LINE__) {
     var comparison = actual != false
 
+    failIfNecessary(comparison, expected: false, file: file, line: line)
+  }
+
+  private func failIfNecessary(comparison: Bool, expected: Bool, file: String, line: UInt) {
     if comparison {
-      var message = assertHelper.buildMessage("Expected <\(actual)> to", "equal <\(false)>", negate: false)
+      var message = assertHelper.buildMessage("Expected <\(actual)> to", "equal <\(expected)>", negate: false)
 
       assertHelper.fail(message, file: file, line: line)
     }
+
   }
 }
