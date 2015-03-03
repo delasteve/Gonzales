@@ -13,19 +13,21 @@ class BoolMatcherTests: XCTestCase {
   }
 
   func test_be_property_that_returns_itself() {
-    XCTAssertTrue((trueBoolMatcher.be as Any) is BoolMatcher)
+    var matcher = trueBoolMatcher as Any
+
+    (matcher is BoolMatcher).should.be.truthy()
   }
 
   func test_truthy_does_not_call_assert_helper_fail_when_equal() {
     trueBoolMatcher.be.truthy()
 
-    XCTAssertEqual(helperMock.failWasCalled, false)
+    helperMock.failWasCalled.should.be.falsy()
   }
 
   func test_truthy_calls_assert_helper_fail_when_not_equal() {
     falseBoolMatcher.be.truthy()
 
-    XCTAssertEqual(helperMock.failWasCalled, true)
+    helperMock.failWasCalled.should.be.truthy()
   }
 
   func test_truthy_calls_assert_helper_fail_with_pretty_fail_message_when_not_equal() {
@@ -53,13 +55,13 @@ class BoolMatcherTests: XCTestCase {
   func test_falsy_does_not_call_assert_helper_fail_when_equal() {
     falseBoolMatcher.be.falsy()
 
-    XCTAssertEqual(helperMock.failWasCalled, false)
+    helperMock.failWasCalled.should.be.falsy()
   }
 
   func test_falsy_calls_assert_helper_fail_when_not_equal() {
     trueBoolMatcher.be.falsy()
 
-    XCTAssertEqual(helperMock.failWasCalled, true)
+    helperMock.failWasCalled.should.be.truthy()
   }
 
   func test_falsy_calls_assert_helper_fail_with_pretty_fail_message_when_not_equal() {
