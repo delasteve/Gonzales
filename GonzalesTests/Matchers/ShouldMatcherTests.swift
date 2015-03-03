@@ -13,13 +13,13 @@ class ShouldMatcherTests: XCTestCase {
   func test_exist_does_not_call_assert_helper_fail_when_not_nil() {
     shouldMatcher.exist(NSObject())
 
-    XCTAssertEqual(helperMock.failWasCalled, false)
+    helperMock.failWasCalled.should.be.falsy()
   }
 
   func test_exist_calls_assert_helper_fail_when_nil() {
     shouldMatcher.exist(NSObject?())
 
-    XCTAssertEqual(helperMock.failWasCalled, true)
+    helperMock.failWasCalled.should.be.truthy()
   }
 
   func test_exist_calls_assert_helper_fail_with_pretty_fail_message_when_nil() {

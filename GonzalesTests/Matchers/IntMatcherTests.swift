@@ -11,19 +11,21 @@ class IntMatcherTests: XCTestCase {
   }
 
   func test_be_property_that_returns_itself() {
-    XCTAssertTrue((intMatcher.be as Any) is IntMatcher)
+    var matcher = intMatcher.be as Any
+
+    (matcher is IntMatcher).should.be.truthy()
   }
 
   func test_equal_does_not_call_assert_helper_fail_when_equal() {
     intMatcher.be.equal(5)
 
-    XCTAssertEqual(helperMock.failWasCalled, false)
+    helperMock.failWasCalled.should.be.falsy()
   }
   
   func test_equal_calls_assert_helper_fail_when_not_equal() {
     intMatcher.be.equal(6)
 
-    XCTAssertEqual(helperMock.failWasCalled, true)
+    helperMock.failWasCalled.should.be.truthy()
   }
 
   func test_equal_calls_assert_helper_fail_with_pretty_fail_message_when_not_equal() {
@@ -51,7 +53,7 @@ class IntMatcherTests: XCTestCase {
   func test_not_negates_assertions() {
     intMatcher.not.be.equal(6)
 
-    XCTAssertEqual(helperMock.failWasCalled, false)
+    helperMock.failWasCalled.should.be.falsy()
   }
 
   func test_not_changes_assertion_message_for_equal() {
@@ -59,7 +61,7 @@ class IntMatcherTests: XCTestCase {
 
     var expectedMessage = "Expected <5> to not equal <5>"
 
-    XCTAssertEqual(helperMock.failWasCalled, true)
+    helperMock.failWasCalled.should.be.truthy()
     XCTAssertEqual(helperMock.failMessage, expectedMessage)
   }
 }
