@@ -1,1 +1,0 @@
-public func Should() -> ShouldMatcher { return ShouldMatcher(assertHelper: AssertHelper()) }
