@@ -1,12 +1,14 @@
 # Gonzales
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
+
 Gonzales is a should expectation framework. It is meant to work with any XCTest compatible framework.
 
 ## Usage
 
 ```swift
-import Gonzales
 import XCTest
+import Gonzales
 
 class Foo: XCTestCase {
   func testBar() {

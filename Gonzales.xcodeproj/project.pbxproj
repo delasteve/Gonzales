@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073039171AA6B5FB0091A076 /* Gonzales.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0730390C1AA6B5FB0091A076 /* Gonzales.framework */; };
+		073039251AA6B7F30091A076 /* ShouldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF991AA55CFD00BF8554 /* ShouldTests.swift */; };
+		073039261AA6B8020091A076 /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D421AA2F2C20007DDFC /* IntExtensionsTests.swift */; };
+		073039271AA6B8050091A076 /* BoolExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEFA11AA565C800BF8554 /* BoolExtensionsTests.swift */; };
+		073039281AA6B80A0091A076 /* AssertHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D451AA307F70007DDFC /* AssertHelperTests.swift */; };
+		073039291AA6B80E0091A076 /* IntMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D361AA2DB830007DDFC /* IntMatcherTests.swift */; };
+		0730392A1AA6B8120091A076 /* ShouldMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D4B1AA389A30007DDFC /* ShouldMatcherTests.swift */; };
+		0730392B1AA6B8160091A076 /* BoolMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF9D1AA5649E00BF8554 /* BoolMatcherTests.swift */; };
+		0730392C1AA6B81B0091A076 /* AssertHelperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3E1AA2E1140007DDFC /* AssertHelperMock.swift */; };
+		0730392D1AA6B8270091A076 /* Should.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF961AA55CDC00BF8554 /* Should.swift */; };
+		0730392E1AA6B83E0091A076 /* IntMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */; };
+		0730392F1AA6B83E0091A076 /* ShouldMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D491AA389990007DDFC /* ShouldMatcher.swift */; };
+		073039301AA6B83E0091A076 /* BoolMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF9B1AA5648100BF8554 /* BoolMatcher.swift */; };
+		073039311AA6B8420091A076 /* AssertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3A1AA2E01E0007DDFC /* AssertHelper.swift */; };
+		073039321AA6B8480091A076 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D401AA2F2870007DDFC /* IntExtensions.swift */; };
+		073039331AA6B8480091A076 /* BoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF9F1AA5657D00BF8554 /* BoolExtensions.swift */; };
 		07A51D301AA2C75D0007DDFC /* IntMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */; };
 		07A51D371AA2DB830007DDFC /* IntMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D361AA2DB830007DDFC /* IntMatcherTests.swift */; };
 		07A51D3B1AA2E01E0007DDFC /* AssertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3A1AA2E01E0007DDFC /* AssertHelper.swift */; };
@@ -26,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		073039181AA6B5FB0091A076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07FE21501AA2C51200C80CDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0730390B1AA6B5FB0091A076;
+			remoteInfo = "Gonzales-OSX";
+		};
 		07FE21661AA2C51200C80CDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 07FE21501AA2C51200C80CDB /* Project object */;
@@ -36,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0730390C1AA6B5FB0091A076 /* Gonzales.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gonzales.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		073039161AA6B5FB0091A076 /* Gonzales-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gonzales-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntMatcher.swift; sourceTree = "<group>"; };
 		07A51D321AA2C8970007DDFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		07A51D341AA2C8C80007DDFC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -56,11 +81,26 @@
 		07CCEFA11AA565C800BF8554 /* BoolExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolExtensionsTests.swift; sourceTree = "<group>"; };
 		07FE21591AA2C51200C80CDB /* Gonzales.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gonzales.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FE215D1AA2C51200C80CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07FE21641AA2C51200C80CDB /* GonzalesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GonzalesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FE21641AA2C51200C80CDB /* Gonzales-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gonzales-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FE216A1AA2C51200C80CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		073039081AA6B5FB0091A076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073039131AA6B5FB0091A076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073039171AA6B5FB0091A076 /* Gonzales.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07FE21551AA2C51200C80CDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,7 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				07FE21591AA2C51200C80CDB /* Gonzales.framework */,
-				07FE21641AA2C51200C80CDB /* GonzalesTests.xctest */,
+				07FE21641AA2C51200C80CDB /* Gonzales-iOSTests.xctest */,
+				0730390C1AA6B5FB0091A076 /* Gonzales.framework */,
+				073039161AA6B5FB0091A076 /* Gonzales-OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,6 +280,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		073039091AA6B5FB0091A076 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07FE21561AA2C51200C80CDB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,9 +297,45 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		07FE21581AA2C51200C80CDB /* Gonzales */ = {
+		0730390B1AA6B5FB0091A076 /* Gonzales-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07FE216F1AA2C51200C80CDB /* Build configuration list for PBXNativeTarget "Gonzales" */;
+			buildConfigurationList = 0730391F1AA6B5FB0091A076 /* Build configuration list for PBXNativeTarget "Gonzales-OSX" */;
+			buildPhases = (
+				073039071AA6B5FB0091A076 /* Sources */,
+				073039081AA6B5FB0091A076 /* Frameworks */,
+				073039091AA6B5FB0091A076 /* Headers */,
+				0730390A1AA6B5FB0091A076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gonzales-OSX";
+			productName = "Gonzales-OSX";
+			productReference = 0730390C1AA6B5FB0091A076 /* Gonzales.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		073039151AA6B5FB0091A076 /* Gonzales-OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 073039221AA6B5FB0091A076 /* Build configuration list for PBXNativeTarget "Gonzales-OSXTests" */;
+			buildPhases = (
+				073039121AA6B5FB0091A076 /* Sources */,
+				073039131AA6B5FB0091A076 /* Frameworks */,
+				073039141AA6B5FB0091A076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				073039191AA6B5FB0091A076 /* PBXTargetDependency */,
+			);
+			name = "Gonzales-OSXTests";
+			productName = "Gonzales-OSXTests";
+			productReference = 073039161AA6B5FB0091A076 /* Gonzales-OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07FE21581AA2C51200C80CDB /* Gonzales-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FE216F1AA2C51200C80CDB /* Build configuration list for PBXNativeTarget "Gonzales-iOS" */;
 			buildPhases = (
 				07FE21541AA2C51200C80CDB /* Sources */,
 				07FE21551AA2C51200C80CDB /* Frameworks */,
@@ -261,14 +346,14 @@
 			);
 			dependencies = (
 			);
-			name = Gonzales;
+			name = "Gonzales-iOS";
 			productName = Gonzales;
 			productReference = 07FE21591AA2C51200C80CDB /* Gonzales.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		07FE21631AA2C51200C80CDB /* GonzalesTests */ = {
+		07FE21631AA2C51200C80CDB /* Gonzales-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07FE21721AA2C51200C80CDB /* Build configuration list for PBXNativeTarget "GonzalesTests" */;
+			buildConfigurationList = 07FE21721AA2C51200C80CDB /* Build configuration list for PBXNativeTarget "Gonzales-iOSTests" */;
 			buildPhases = (
 				07FE21601AA2C51200C80CDB /* Sources */,
 				07FE21611AA2C51200C80CDB /* Frameworks */,
@@ -279,9 +364,9 @@
 			dependencies = (
 				07FE21671AA2C51200C80CDB /* PBXTargetDependency */,
 			);
-			name = GonzalesTests;
+			name = "Gonzales-iOSTests";
 			productName = GonzalesTests;
-			productReference = 07FE21641AA2C51200C80CDB /* GonzalesTests.xctest */;
+			productReference = 07FE21641AA2C51200C80CDB /* Gonzales-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -293,6 +378,12 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Stephen Cavaliere";
 				TargetAttributes = {
+					0730390B1AA6B5FB0091A076 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					073039151AA6B5FB0091A076 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					07FE21581AA2C51200C80CDB = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -313,13 +404,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07FE21581AA2C51200C80CDB /* Gonzales */,
-				07FE21631AA2C51200C80CDB /* GonzalesTests */,
+				07FE21581AA2C51200C80CDB /* Gonzales-iOS */,
+				07FE21631AA2C51200C80CDB /* Gonzales-iOSTests */,
+				0730390B1AA6B5FB0091A076 /* Gonzales-OSX */,
+				073039151AA6B5FB0091A076 /* Gonzales-OSXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0730390A1AA6B5FB0091A076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073039141AA6B5FB0091A076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07FE21571AA2C51200C80CDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,6 +444,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		073039071AA6B5FB0091A076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073039301AA6B83E0091A076 /* BoolMatcher.swift in Sources */,
+				0730392F1AA6B83E0091A076 /* ShouldMatcher.swift in Sources */,
+				073039311AA6B8420091A076 /* AssertHelper.swift in Sources */,
+				073039321AA6B8480091A076 /* IntExtensions.swift in Sources */,
+				0730392E1AA6B83E0091A076 /* IntMatcher.swift in Sources */,
+				073039331AA6B8480091A076 /* BoolExtensions.swift in Sources */,
+				0730392D1AA6B8270091A076 /* Should.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073039121AA6B5FB0091A076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0730392B1AA6B8160091A076 /* BoolMatcherTests.swift in Sources */,
+				073039251AA6B7F30091A076 /* ShouldTests.swift in Sources */,
+				073039261AA6B8020091A076 /* IntExtensionsTests.swift in Sources */,
+				073039271AA6B8050091A076 /* BoolExtensionsTests.swift in Sources */,
+				0730392A1AA6B8120091A076 /* ShouldMatcherTests.swift in Sources */,
+				0730392C1AA6B81B0091A076 /* AssertHelperMock.swift in Sources */,
+				073039291AA6B80E0091A076 /* IntMatcherTests.swift in Sources */,
+				073039281AA6B80A0091A076 /* AssertHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07FE21541AA2C51200C80CDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,14 +505,103 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		073039191AA6B5FB0091A076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0730390B1AA6B5FB0091A076 /* Gonzales-OSX */;
+			targetProxy = 073039181AA6B5FB0091A076 /* PBXContainerItemProxy */;
+		};
 		07FE21671AA2C51200C80CDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07FE21581AA2C51200C80CDB /* Gonzales */;
+			target = 07FE21581AA2C51200C80CDB /* Gonzales-iOS */;
 			targetProxy = 07FE21661AA2C51200C80CDB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		073039201AA6B5FB0091A076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Gonzales/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = Gonzales;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		073039211AA6B5FB0091A076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Gonzales/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = Gonzales;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		073039231AA6B5FB0091A076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GonzalesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		073039241AA6B5FB0091A076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GonzalesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		07FE216D1AA2C51200C80CDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -476,7 +701,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Gonzales;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -496,7 +721,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Gonzales;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -515,7 +740,7 @@
 				);
 				INFOPLIST_FILE = GonzalesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gonzales-iOSTests";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -530,13 +755,31 @@
 				);
 				INFOPLIST_FILE = GonzalesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gonzales-iOSTests";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0730391F1AA6B5FB0091A076 /* Build configuration list for PBXNativeTarget "Gonzales-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073039201AA6B5FB0091A076 /* Debug */,
+				073039211AA6B5FB0091A076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		073039221AA6B5FB0091A076 /* Build configuration list for PBXNativeTarget "Gonzales-OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073039231AA6B5FB0091A076 /* Debug */,
+				073039241AA6B5FB0091A076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		07FE21531AA2C51200C80CDB /* Build configuration list for PBXProject "Gonzales" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -546,7 +789,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07FE216F1AA2C51200C80CDB /* Build configuration list for PBXNativeTarget "Gonzales" */ = {
+		07FE216F1AA2C51200C80CDB /* Build configuration list for PBXNativeTarget "Gonzales-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07FE21701AA2C51200C80CDB /* Debug */,
@@ -555,7 +798,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07FE21721AA2C51200C80CDB /* Build configuration list for PBXNativeTarget "GonzalesTests" */ = {
+		07FE21721AA2C51200C80CDB /* Build configuration list for PBXNativeTarget "Gonzales-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07FE21731AA2C51200C80CDB /* Debug */,
