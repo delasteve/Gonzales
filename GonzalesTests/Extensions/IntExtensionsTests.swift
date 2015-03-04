@@ -1,5 +1,5 @@
-import Gonzales
 import XCTest
+import Gonzales
 
 class IntExtensionsTests: XCTestCase {
   func test_has_property_should_of_type_IntMatcher() {

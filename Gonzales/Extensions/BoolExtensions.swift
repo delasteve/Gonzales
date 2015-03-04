@@ -1,3 +1,3 @@
 public extension Bool {
-  var should: BoolMatcher { return BoolMatcher(self, assertHelper: AssertHelper()) }
+  var should: BoolMatcher { return BoolMatcher(self) }
 }

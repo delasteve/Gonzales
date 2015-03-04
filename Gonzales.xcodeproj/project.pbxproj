@@ -7,31 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071D2CB81AA6C54C00661CA6 /* BaseMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D2CB71AA6C54C00661CA6 /* BaseMatcher.swift */; };
+		071D2CB91AA6C54C00661CA6 /* BaseMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D2CB71AA6C54C00661CA6 /* BaseMatcher.swift */; };
+		071D2CBB1AA6CC4000661CA6 /* XCTestProxyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D2CBA1AA6CC4000661CA6 /* XCTestProxyProtocol.swift */; };
+		071D2CBC1AA6CC4000661CA6 /* XCTestProxyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D2CBA1AA6CC4000661CA6 /* XCTestProxyProtocol.swift */; };
 		073039171AA6B5FB0091A076 /* Gonzales.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0730390C1AA6B5FB0091A076 /* Gonzales.framework */; };
 		073039251AA6B7F30091A076 /* ShouldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF991AA55CFD00BF8554 /* ShouldTests.swift */; };
 		073039261AA6B8020091A076 /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D421AA2F2C20007DDFC /* IntExtensionsTests.swift */; };
 		073039271AA6B8050091A076 /* BoolExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEFA11AA565C800BF8554 /* BoolExtensionsTests.swift */; };
-		073039281AA6B80A0091A076 /* AssertHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D451AA307F70007DDFC /* AssertHelperTests.swift */; };
 		073039291AA6B80E0091A076 /* IntMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D361AA2DB830007DDFC /* IntMatcherTests.swift */; };
-		0730392A1AA6B8120091A076 /* ShouldMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D4B1AA389A30007DDFC /* ShouldMatcherTests.swift */; };
+		0730392A1AA6B8120091A076 /* OptionalMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D4B1AA389A30007DDFC /* OptionalMatcherTests.swift */; };
 		0730392B1AA6B8160091A076 /* BoolMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF9D1AA5649E00BF8554 /* BoolMatcherTests.swift */; };
-		0730392C1AA6B81B0091A076 /* AssertHelperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3E1AA2E1140007DDFC /* AssertHelperMock.swift */; };
+		0730392C1AA6B81B0091A076 /* XCTestProxyMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3E1AA2E1140007DDFC /* XCTestProxyMock.swift */; };
 		0730392D1AA6B8270091A076 /* Should.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF961AA55CDC00BF8554 /* Should.swift */; };
 		0730392E1AA6B83E0091A076 /* IntMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */; };
-		0730392F1AA6B83E0091A076 /* ShouldMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D491AA389990007DDFC /* ShouldMatcher.swift */; };
+		0730392F1AA6B83E0091A076 /* OptionalMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D491AA389990007DDFC /* OptionalMatcher.swift */; };
 		073039301AA6B83E0091A076 /* BoolMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF9B1AA5648100BF8554 /* BoolMatcher.swift */; };
-		073039311AA6B8420091A076 /* AssertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3A1AA2E01E0007DDFC /* AssertHelper.swift */; };
+		073039311AA6B8420091A076 /* XCTestProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3A1AA2E01E0007DDFC /* XCTestProxy.swift */; };
 		073039321AA6B8480091A076 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D401AA2F2870007DDFC /* IntExtensions.swift */; };
 		073039331AA6B8480091A076 /* BoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF9F1AA5657D00BF8554 /* BoolExtensions.swift */; };
 		07A51D301AA2C75D0007DDFC /* IntMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */; };
 		07A51D371AA2DB830007DDFC /* IntMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D361AA2DB830007DDFC /* IntMatcherTests.swift */; };
-		07A51D3B1AA2E01E0007DDFC /* AssertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3A1AA2E01E0007DDFC /* AssertHelper.swift */; };
-		07A51D3F1AA2E1140007DDFC /* AssertHelperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3E1AA2E1140007DDFC /* AssertHelperMock.swift */; };
+		07A51D3B1AA2E01E0007DDFC /* XCTestProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3A1AA2E01E0007DDFC /* XCTestProxy.swift */; };
+		07A51D3F1AA2E1140007DDFC /* XCTestProxyMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D3E1AA2E1140007DDFC /* XCTestProxyMock.swift */; };
 		07A51D411AA2F2870007DDFC /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D401AA2F2870007DDFC /* IntExtensions.swift */; };
 		07A51D431AA2F2C20007DDFC /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D421AA2F2C20007DDFC /* IntExtensionsTests.swift */; };
-		07A51D461AA307F70007DDFC /* AssertHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D451AA307F70007DDFC /* AssertHelperTests.swift */; };
-		07A51D4A1AA389990007DDFC /* ShouldMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D491AA389990007DDFC /* ShouldMatcher.swift */; };
-		07A51D4C1AA389A30007DDFC /* ShouldMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D4B1AA389A30007DDFC /* ShouldMatcherTests.swift */; };
+		07A51D4A1AA389990007DDFC /* OptionalMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D491AA389990007DDFC /* OptionalMatcher.swift */; };
+		07A51D4C1AA389A30007DDFC /* OptionalMatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A51D4B1AA389A30007DDFC /* OptionalMatcherTests.swift */; };
 		07CCEF971AA55CDC00BF8554 /* Should.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF961AA55CDC00BF8554 /* Should.swift */; };
 		07CCEF9A1AA55CFD00BF8554 /* ShouldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF991AA55CFD00BF8554 /* ShouldTests.swift */; };
 		07CCEF9C1AA5648100BF8554 /* BoolMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF9B1AA5648100BF8554 /* BoolMatcher.swift */; };
@@ -59,20 +61,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071D2CB61AA6BFF400661CA6 /* .editorconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = .editorconfig; sourceTree = "<group>"; };
+		071D2CB71AA6C54C00661CA6 /* BaseMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMatcher.swift; sourceTree = "<group>"; };
+		071D2CBA1AA6CC4000661CA6 /* XCTestProxyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestProxyProtocol.swift; sourceTree = "<group>"; };
 		0730390C1AA6B5FB0091A076 /* Gonzales.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gonzales.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		073039161AA6B5FB0091A076 /* Gonzales-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gonzales-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntMatcher.swift; sourceTree = "<group>"; };
 		07A51D321AA2C8970007DDFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		07A51D341AA2C8C80007DDFC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		07A51D351AA2C9830007DDFC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		07A51D361AA2DB830007DDFC /* IntMatcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntMatcherTests.swift; sourceTree = "<group>"; };
-		07A51D3A1AA2E01E0007DDFC /* AssertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertHelper.swift; sourceTree = "<group>"; };
-		07A51D3E1AA2E1140007DDFC /* AssertHelperMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertHelperMock.swift; sourceTree = "<group>"; };
+		07A51D351AA2C9830007DDFC /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		07A51D361AA2DB830007DDFC /* IntMatcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = IntMatcherTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		07A51D3A1AA2E01E0007DDFC /* XCTestProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestProxy.swift; sourceTree = "<group>"; };
+		07A51D3E1AA2E1140007DDFC /* XCTestProxyMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestProxyMock.swift; sourceTree = "<group>"; };
 		07A51D401AA2F2870007DDFC /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		07A51D421AA2F2C20007DDFC /* IntExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
-		07A51D451AA307F70007DDFC /* AssertHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertHelperTests.swift; sourceTree = "<group>"; };
-		07A51D491AA389990007DDFC /* ShouldMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldMatcher.swift; sourceTree = "<group>"; };
-		07A51D4B1AA389A30007DDFC /* ShouldMatcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldMatcherTests.swift; sourceTree = "<group>"; };
+		07A51D491AA389990007DDFC /* OptionalMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalMatcher.swift; sourceTree = "<group>"; };
+		07A51D4B1AA389A30007DDFC /* OptionalMatcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = OptionalMatcherTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		07CCEF961AA55CDC00BF8554 /* Should.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Should.swift; sourceTree = "<group>"; };
 		07CCEF991AA55CFD00BF8554 /* ShouldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldTests.swift; sourceTree = "<group>"; };
 		07CCEF9B1AA5648100BF8554 /* BoolMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolMatcher.swift; sourceTree = "<group>"; };
@@ -122,43 +126,37 @@
 		07A51D311AA2C82B0007DDFC /* GonzalesMetaData */ = {
 			isa = PBXGroup;
 			children = (
-				07A51D351AA2C9830007DDFC /* LICENSE */,
+				071D2CB61AA6BFF400661CA6 /* .editorconfig */,
+				07A51D351AA2C9830007DDFC /* LICENSE.md */,
 				07A51D341AA2C8C80007DDFC /* .gitignore */,
 				07A51D321AA2C8970007DDFC /* README.md */,
 			);
 			name = GonzalesMetaData;
 			sourceTree = "<group>";
 		};
-		07A51D381AA2DFEC0007DDFC /* Helpers */ = {
+		07A51D381AA2DFEC0007DDFC /* Proxies */ = {
 			isa = PBXGroup;
 			children = (
-				07A51D3A1AA2E01E0007DDFC /* AssertHelper.swift */,
+				07A51D3A1AA2E01E0007DDFC /* XCTestProxy.swift */,
+				071D2CBA1AA6CC4000661CA6 /* XCTestProxyProtocol.swift */,
 			);
-			path = Helpers;
+			path = Proxies;
 			sourceTree = "<group>";
 		};
 		07A51D3C1AA2E0FE0007DDFC /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				07A51D3D1AA2E0FE0007DDFC /* Helpers */,
+				07A51D3D1AA2E0FE0007DDFC /* Proxies */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		07A51D3D1AA2E0FE0007DDFC /* Helpers */ = {
+		07A51D3D1AA2E0FE0007DDFC /* Proxies */ = {
 			isa = PBXGroup;
 			children = (
-				07A51D3E1AA2E1140007DDFC /* AssertHelperMock.swift */,
+				07A51D3E1AA2E1140007DDFC /* XCTestProxyMock.swift */,
 			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		07A51D441AA307E50007DDFC /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				07A51D451AA307F70007DDFC /* AssertHelperTests.swift */,
-			);
-			path = Helpers;
+			path = Proxies;
 			sourceTree = "<group>";
 		};
 		07CCEF951AA55CDC00BF8554 /* Globals */ = {
@@ -203,7 +201,7 @@
 			children = (
 				07CCEF951AA55CDC00BF8554 /* Globals */,
 				07FE21751AA2C5C700C80CDB /* Extensions */,
-				07A51D381AA2DFEC0007DDFC /* Helpers */,
+				07A51D381AA2DFEC0007DDFC /* Proxies */,
 				07FE21761AA2C5C700C80CDB /* Matchers */,
 				07FE215C1AA2C51200C80CDB /* Supporting Files */,
 			);
@@ -223,7 +221,6 @@
 			children = (
 				07CCEF981AA55CFD00BF8554 /* Globals */,
 				07FE21771AA2C5D000C80CDB /* Extensions */,
-				07A51D441AA307E50007DDFC /* Helpers */,
 				07FE21781AA2C5D000C80CDB /* Matchers */,
 				07A51D3C1AA2E0FE0007DDFC /* Mocks */,
 				07FE21691AA2C51200C80CDB /* Supporting Files */,
@@ -252,8 +249,9 @@
 			isa = PBXGroup;
 			children = (
 				07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */,
-				07A51D491AA389990007DDFC /* ShouldMatcher.swift */,
+				07A51D491AA389990007DDFC /* OptionalMatcher.swift */,
 				07CCEF9B1AA5648100BF8554 /* BoolMatcher.swift */,
+				071D2CB71AA6C54C00661CA6 /* BaseMatcher.swift */,
 			);
 			path = Matchers;
 			sourceTree = "<group>";
@@ -271,7 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				07A51D361AA2DB830007DDFC /* IntMatcherTests.swift */,
-				07A51D4B1AA389A30007DDFC /* ShouldMatcherTests.swift */,
+				07A51D4B1AA389A30007DDFC /* OptionalMatcherTests.swift */,
 				07CCEF9D1AA5649E00BF8554 /* BoolMatcherTests.swift */,
 			);
 			path = Matchers;
@@ -449,8 +447,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				073039301AA6B83E0091A076 /* BoolMatcher.swift in Sources */,
-				0730392F1AA6B83E0091A076 /* ShouldMatcher.swift in Sources */,
-				073039311AA6B8420091A076 /* AssertHelper.swift in Sources */,
+				0730392F1AA6B83E0091A076 /* OptionalMatcher.swift in Sources */,
+				071D2CBC1AA6CC4000661CA6 /* XCTestProxyProtocol.swift in Sources */,
+				073039311AA6B8420091A076 /* XCTestProxy.swift in Sources */,
+				071D2CB91AA6C54C00661CA6 /* BaseMatcher.swift in Sources */,
 				073039321AA6B8480091A076 /* IntExtensions.swift in Sources */,
 				0730392E1AA6B83E0091A076 /* IntMatcher.swift in Sources */,
 				073039331AA6B8480091A076 /* BoolExtensions.swift in Sources */,
@@ -466,10 +466,9 @@
 				073039251AA6B7F30091A076 /* ShouldTests.swift in Sources */,
 				073039261AA6B8020091A076 /* IntExtensionsTests.swift in Sources */,
 				073039271AA6B8050091A076 /* BoolExtensionsTests.swift in Sources */,
-				0730392A1AA6B8120091A076 /* ShouldMatcherTests.swift in Sources */,
-				0730392C1AA6B81B0091A076 /* AssertHelperMock.swift in Sources */,
+				0730392A1AA6B8120091A076 /* OptionalMatcherTests.swift in Sources */,
+				0730392C1AA6B81B0091A076 /* XCTestProxyMock.swift in Sources */,
 				073039291AA6B80E0091A076 /* IntMatcherTests.swift in Sources */,
-				073039281AA6B80A0091A076 /* AssertHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,12 +477,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A51D411AA2F2870007DDFC /* IntExtensions.swift in Sources */,
-				07A51D4A1AA389990007DDFC /* ShouldMatcher.swift in Sources */,
+				07A51D4A1AA389990007DDFC /* OptionalMatcher.swift in Sources */,
+				071D2CBB1AA6CC4000661CA6 /* XCTestProxyProtocol.swift in Sources */,
 				07CCEFA01AA5657D00BF8554 /* BoolExtensions.swift in Sources */,
+				071D2CB81AA6C54C00661CA6 /* BaseMatcher.swift in Sources */,
 				07CCEF9C1AA5648100BF8554 /* BoolMatcher.swift in Sources */,
 				07CCEF971AA55CDC00BF8554 /* Should.swift in Sources */,
 				07A51D301AA2C75D0007DDFC /* IntMatcher.swift in Sources */,
-				07A51D3B1AA2E01E0007DDFC /* AssertHelper.swift in Sources */,
+				07A51D3B1AA2E01E0007DDFC /* XCTestProxy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,9 +497,8 @@
 				07A51D431AA2F2C20007DDFC /* IntExtensionsTests.swift in Sources */,
 				07CCEFA21AA565C800BF8554 /* BoolExtensionsTests.swift in Sources */,
 				07A51D371AA2DB830007DDFC /* IntMatcherTests.swift in Sources */,
-				07A51D3F1AA2E1140007DDFC /* AssertHelperMock.swift in Sources */,
-				07A51D4C1AA389A30007DDFC /* ShouldMatcherTests.swift in Sources */,
-				07A51D461AA307F70007DDFC /* AssertHelperTests.swift in Sources */,
+				07A51D3F1AA2E1140007DDFC /* XCTestProxyMock.swift in Sources */,
+				07A51D4C1AA389A30007DDFC /* OptionalMatcherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

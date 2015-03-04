@@ -1,21 +1,19 @@
 import Gonzales
 
-public class AssertHelperMock: AssertHelper {
+public class XCTestProxyMock: XCTestProxyProtocol {
   public var failWasCalled: Bool
   public var failFile: String
   public var failLine: UInt
   public var failMessage: String
 
-  public override init() {
+  public init() {
     failMessage = ""
     failFile = __FILE__
     failLine = 0
     failWasCalled = false
-
-    super.init()
   }
 
-  public override func fail(message: String, file: String, line: UInt) {
+  public func fail(message: String, file: String, line: UInt) {
     failWasCalled = true
     failFile = file
     failLine = line

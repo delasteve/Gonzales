@@ -1,13 +1,13 @@
-import Gonzales
 import XCTest
+import Gonzales
 
 class IntMatcherTests: XCTestCase {
-  var helperMock: AssertHelperMock!
+  var xctestProxyMock: XCTestProxyMock!
   var intMatcher: IntMatcher!
 
   override func setUp() {
-    helperMock = AssertHelperMock()
-    intMatcher = IntMatcher(5, assertHelper: helperMock)
+    xctestProxyMock = XCTestProxyMock()
+    intMatcher = IntMatcher(5, xctestProxy: xctestProxyMock)
   }
 
   func test_be_property_that_returns_itself() {
@@ -16,44 +16,44 @@ class IntMatcherTests: XCTestCase {
     (matcher is IntMatcher).should.be.truthy()
   }
 
-  func test_equal_does_not_call_assert_helper_fail_when_equal() {
+  func test_equal_does_not_call_xctest_proxy_fail_when_equal() {
     intMatcher.be.equal(5)
 
-    helperMock.failWasCalled.should.be.falsy()
+    xctestProxyMock.failWasCalled.should.be.falsy()
   }
   
-  func test_equal_calls_assert_helper_fail_when_not_equal() {
+  func test_equal_calls_xctest_proxy_fail_when_not_equal() {
     intMatcher.be.equal(6)
 
-    helperMock.failWasCalled.should.be.truthy()
+    xctestProxyMock.failWasCalled.should.be.truthy()
   }
 
-  func test_equal_calls_assert_helper_fail_with_pretty_fail_message_when_not_equal() {
+  func test_equal_calls_xctest_proxy_fail_with_pretty_fail_message_when_not_equal() {
     intMatcher.be.equal(6)
 
     var expectedMessage = "Expected <5> to equal <6>"
 
-    XCTAssertEqual(helperMock.failMessage, expectedMessage)
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
   }
 
-  func test_equal_passes_test_file_to_assert_helper_fail_when_not_equal() {
+  func test_equal_passes_test_file_to_xctest_proxy_fail_when_not_equal() {
     intMatcher.be.equal(6)
 
-    XCTAssertEqual(helperMock.failFile, __FILE__)
+    XCTAssertEqual(xctestProxyMock.failFile, __FILE__)
   }
 
-  func test_equal_passes_line_number_to_assert_helper_fail_when_not_equal() {
+  func test_equal_passes_line_number_to_xctest_proxy_fail_when_not_equal() {
     intMatcher.be.equal(6)
 
     var expectedLine = __LINE__ - 2 as UInt
 
-    XCTAssertEqual(helperMock.failLine, expectedLine)
+    XCTAssertEqual(xctestProxyMock.failLine, expectedLine)
   }
 
   func test_not_negates_assertions() {
     intMatcher.not.be.equal(6)
 
-    helperMock.failWasCalled.should.be.falsy()
+    xctestProxyMock.failWasCalled.should.be.falsy()
   }
 
   func test_not_changes_assertion_message_for_equal() {
@@ -61,7 +61,7 @@ class IntMatcherTests: XCTestCase {
 
     var expectedMessage = "Expected <5> to not equal <5>"
 
-    helperMock.failWasCalled.should.be.truthy()
-    XCTAssertEqual(helperMock.failMessage, expectedMessage)
+    xctestProxyMock.failWasCalled.should.be.truthy()
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
   }
 }

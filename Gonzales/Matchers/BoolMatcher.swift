@@ -1,10 +1,10 @@
-public class BoolMatcher {
+public class BoolMatcher: BaseMatcher  {
   private var actual: Bool
-  private var assertHelper: AssertHelper
+  private var xctestProxy: XCTestProxyProtocol
 
-  public init(_ actual: Bool, assertHelper: AssertHelper) {
+  public init(_ actual: Bool, xctestProxy: XCTestProxyProtocol = XCTestProxy()) {
     self.actual = actual
-    self.assertHelper = assertHelper
+    self.xctestProxy = xctestProxy
   }
 
   public var be: BoolMatcher {
@@ -27,9 +27,9 @@ public class BoolMatcher {
 
   private func failIfNecessary(comparison: Bool, expected: Bool, file: String, line: UInt) {
     if comparison {
-      var message = assertHelper.buildMessage("Expected <\(actual)> to", "equal <\(expected)>", negate: false)
+      var message = buildMessage("Expected <\(actual)> to", "equal <\(expected)>", negate: false)
 
-      assertHelper.fail(message, file: file, line: line)
+      xctestProxy.fail(message, file: file, line: line)
     }
 
   }

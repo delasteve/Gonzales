@@ -1,10 +1,10 @@
-import Gonzales
 import XCTest
+import Gonzales
 
 class ShouldTests: XCTestCase {
-  func test_global_property_should_of_type_ShouldMatcher() {
+  func test_global_property_should_of_type_OptionalMatcher() {
     var matcher = should as Any
 
-    (matcher is ShouldMatcher).should.be.truthy()
+    (matcher is OptionalMatcher).should.be.truthy()
   }
 }

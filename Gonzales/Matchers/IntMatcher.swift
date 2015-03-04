@@ -1,11 +1,11 @@
-public class IntMatcher {
+public class IntMatcher: BaseMatcher {
   private var actual: Int
-  private var assertHelper: AssertHelper
+  private var xctestProxy: XCTestProxyProtocol
   private var negate: Bool
 
-  public init(_ actual: Int, assertHelper: AssertHelper) {
+  public init(_ actual: Int, xctestProxy: XCTestProxyProtocol = XCTestProxy()) {
     self.actual = actual
-    self.assertHelper = assertHelper
+    self.xctestProxy = xctestProxy
     self.negate = false
   }
 
@@ -30,9 +30,9 @@ public class IntMatcher {
     }
 
     if comparison {
-      var message = assertHelper.buildMessage("Expected <\(actual)> to", "equal <\(expected)>", negate: negate)
+      var message = buildMessage("Expected <\(actual)> to", "equal <\(expected)>", negate: negate)
 
-      assertHelper.fail(message, file: file, line: line)
+      xctestProxy.fail(message, file: file, line: line)
     }
   }
 }

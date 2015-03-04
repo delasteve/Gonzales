@@ -1,1 +1,1 @@
-public var should: ShouldMatcher { return ShouldMatcher(assertHelper: AssertHelper()) }
+public var should: OptionalMatcher { return OptionalMatcher() }
