@@ -66,6 +66,7 @@
 		071D2CBA1AA6CC4000661CA6 /* XCTestProxyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestProxyProtocol.swift; sourceTree = "<group>"; };
 		0730390C1AA6B5FB0091A076 /* Gonzales.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gonzales.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		073039161AA6B5FB0091A076 /* Gonzales-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gonzales-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		077880E81AA8CD3F002B69B5 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		07A51D2F1AA2C75D0007DDFC /* IntMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntMatcher.swift; sourceTree = "<group>"; };
 		07A51D321AA2C8970007DDFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		07A51D341AA2C8C80007DDFC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -130,6 +131,7 @@
 				07A51D351AA2C9830007DDFC /* LICENSE.md */,
 				07A51D341AA2C8C80007DDFC /* .gitignore */,
 				07A51D321AA2C8970007DDFC /* README.md */,
+				077880E81AA8CD3F002B69B5 /* .travis.yml */,
 			);
 			name = GonzalesMetaData;
 			sourceTree = "<group>";
@@ -536,7 +538,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = Gonzales;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -558,7 +560,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = Gonzales;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;

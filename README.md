@@ -1,6 +1,5 @@
 # Gonzales
-
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square)](https://github.com/Carthage/Carthage)
+[![Travis CI master branch build status][travisci-badge]][travisci-link] [![Carthage compatible][carthage-badge]][carthage-link]
 
 Gonzales is a should expectation framework. It is meant to work with any XCTest compatible framework.
 
@@ -44,3 +43,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+[travisci-link]: https://travis-ci.org/delasteve/Gonzales
+[travisci-badge]: https://img.shields.io/travis/delasteve/Gonzales/master.svg?style=flat-square
+
+[carthage-link]: https://github.com/Carthage/Carthage
+[carthage-badge]: https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat-square
