@@ -8,3 +8,7 @@ before_install:
 script:
   - xcodebuild -scheme Gonzales-OSX -sdk macosx10.10 clean test | xcpretty -c
   - xcodebuild -scheme Gonzales-iOS -sdk iphonesimulator clean test | xcpretty -c
+
+notifications:
+  slack:
+    secure: jBv5LpY7e2gSWc6ZZuqtRGQVi0aOQI1rKTXqVHVaLI6k9jyyvCkhNOcw5l4oOrjZUHyN4O2I+YJ+sY3KZlnk2LJiuip0urC69VmXgQGYSMfw2orTbuqFttl3Unrg8ZFzfKhGRMcfomaO0LsHKyJX+bIN7fYyVvKH7xE4fqaCeVU=
