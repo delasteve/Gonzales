@@ -6,5 +6,4 @@ before_install:
   - gem install xcpretty
 
 script:
-  - set -o pipefail && xcodebuild -scheme Gonzales-OSX -sdk macosx10.10 clean test | xcpretty -c
-  - set -o pipefail && xcodebuild -scheme Gonzales-iOS -sdk iphonesimulator clean test | xcpretty -c
+  - xcodebuild -scheme Gonzales-OSX -sdk macosx10.10 clean test
