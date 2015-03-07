@@ -64,4 +64,80 @@ class IntMatcherTests: XCTestCase {
     xctestProxyMock.failWasCalled.should.be.truthy()
     XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
   }
+
+  func test_equals_passes_when_int_8_is_equal() {
+    var actual:Int8 = 5
+
+    intMatcher.be.equal(actual)
+
+    xctestProxyMock.failWasCalled.should.be.falsy()
+  }
+
+  func test_equal_fails_when_int_8_is_not_equal() {
+    var actual:Int8 = 8
+
+    intMatcher.be.equal(actual)
+
+    var expectedMessage = "Expected <5> to equal <8>"
+
+    xctestProxyMock.failWasCalled.should.be.truthy()
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
+  }
+
+  func test_equals_passes_when_int_16_is_equal() {
+    var actual:Int16 = 5
+
+    intMatcher.be.equal(actual)
+
+    xctestProxyMock.failWasCalled.should.be.falsy()
+  }
+
+  func test_equal_fails_when_int_16_is_not_equal() {
+    var actual:Int16 = 8
+
+    intMatcher.be.equal(actual)
+
+    var expectedMessage = "Expected <5> to equal <8>"
+
+    xctestProxyMock.failWasCalled.should.be.truthy()
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
+  }
+
+  func test_equals_passes_when_int_32_is_equal() {
+    var actual:Int32 = 5
+
+    intMatcher.be.equal(actual)
+
+    xctestProxyMock.failWasCalled.should.be.falsy()
+  }
+
+  func test_equal_fails_when_int_32_is_not_equal() {
+    var actual:Int32 = 8
+
+    intMatcher.be.equal(actual)
+
+    var expectedMessage = "Expected <5> to equal <8>"
+
+    xctestProxyMock.failWasCalled.should.be.truthy()
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
+  }
+
+  func test_equals_passes_when_int_64_is_equal() {
+    var actual:Int64 = 5
+
+    intMatcher.be.equal(actual)
+
+    xctestProxyMock.failWasCalled.should.be.falsy()
+  }
+
+  func test_equal_fails_when_int_64_is_not_equal() {
+    var actual:Int64 = 8
+
+    intMatcher.be.equal(actual)
+
+    var expectedMessage = "Expected <5> to equal <8>"
+
+    xctestProxyMock.failWasCalled.should.be.truthy()
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
+  }
 }
