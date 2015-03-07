@@ -140,4 +140,99 @@ class IntMatcherTests: XCTestCase {
     xctestProxyMock.failWasCalled.should.be.truthy()
     XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
   }
+
+  func test_equals_passes_when_uint_is_equal() {
+    var actual:UInt = 5
+
+    intMatcher.be.equal(actual)
+
+    xctestProxyMock.failWasCalled.should.be.falsy()
+  }
+
+  func test_equal_fails_when_uint_is_not_equal() {
+    var actual:UInt = 8
+
+    intMatcher.be.equal(actual)
+
+    var expectedMessage = "Expected <5> to equal <8>"
+
+    xctestProxyMock.failWasCalled.should.be.truthy()
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
+  }
+
+  func test_equals_passes_when_uint_8_is_equal() {
+    var actual:UInt8 = 5
+
+    intMatcher.be.equal(actual)
+
+    xctestProxyMock.failWasCalled.should.be.falsy()
+  }
+
+  func test_equal_fails_when_uint_8_is_not_equal() {
+    var actual:UInt8 = 8
+
+    intMatcher.be.equal(actual)
+
+    var expectedMessage = "Expected <5> to equal <8>"
+
+    xctestProxyMock.failWasCalled.should.be.truthy()
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
+  }
+
+  func test_equals_passes_when_uint_16_is_equal() {
+    var actual:UInt16 = 5
+
+    intMatcher.be.equal(actual)
+
+    xctestProxyMock.failWasCalled.should.be.falsy()
+  }
+
+  func test_equal_fails_when_uint_16_is_not_equal() {
+    var actual:UInt16 = 8
+
+    intMatcher.be.equal(actual)
+
+    var expectedMessage = "Expected <5> to equal <8>"
+
+    xctestProxyMock.failWasCalled.should.be.truthy()
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
+  }
+
+  func test_equals_passes_when_uint_32_is_equal() {
+    var actual:UInt32 = 5
+
+    intMatcher.be.equal(actual)
+
+    xctestProxyMock.failWasCalled.should.be.falsy()
+  }
+
+  func test_equal_fails_when_uint_32_is_not_equal() {
+    var actual:UInt32 = 8
+
+    intMatcher.be.equal(actual)
+
+    var expectedMessage = "Expected <5> to equal <8>"
+
+    xctestProxyMock.failWasCalled.should.be.truthy()
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
+  }
+
+  func test_equals_passes_when_uint_64_is_equal() {
+    var actual:UInt64 = 5
+
+    intMatcher.be.equal(actual)
+
+    xctestProxyMock.failWasCalled.should.be.falsy()
+  }
+
+  func test_equal_fails_when_uint_64_is_not_equal() {
+    var actual:UInt64 = 8
+
+    intMatcher.be.equal(actual)
+
+    var expectedMessage = "Expected <5> to equal <8>"
+
+    xctestProxyMock.failWasCalled.should.be.truthy()
+    XCTAssertEqual(xctestProxyMock.failMessage, expectedMessage)
+  }
 }
