@@ -32,9 +32,11 @@
 		07CCEF9A1AA55CFD00BF8554 /* ShouldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCEF991AA55CFD00BF8554 /* ShouldTests.swift */; };
 		07FE21651AA2C51200C80CDB /* Gonzales.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FE21591AA2C51200C80CDB /* Gonzales.framework */; };
 		184C067BB2066035C868D893 /* EquatableMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C0F0B79A29CB7FFB10A77 /* EquatableMatcher.swift */; };
+		184C06C570448753D3F9B285 /* BoolExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C0607E843E416F7F36BF7 /* BoolExtensionsTests.swift */; };
 		184C09003CBF5ED1217261B8 /* EquatableMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C0F0B79A29CB7FFB10A77 /* EquatableMatcher.swift */; };
 		184C0D4762C606572CC96A0B /* BoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C082AC574B36F38EE792D /* BoolExtensions.swift */; };
 		184C0D60E6D0BFBEE29C7953 /* BoolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C082AC574B36F38EE792D /* BoolExtensions.swift */; };
+		184C0F0DCE81B4877AE3F1B7 /* BoolExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C0607E843E416F7F36BF7 /* BoolExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,7 @@
 		07FE215D1AA2C51200C80CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FE21641AA2C51200C80CDB /* Gonzales-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gonzales-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FE216A1AA2C51200C80CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184C0607E843E416F7F36BF7 /* BoolExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolExtensionsTests.swift; sourceTree = "<group>"; };
 		184C082AC574B36F38EE792D /* BoolExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolExtensions.swift; sourceTree = "<group>"; };
 		184C0F0B79A29CB7FFB10A77 /* EquatableMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableMatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -252,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				07A51D421AA2F2C20007DDFC /* IntExtensionsTests.swift */,
+				184C0607E843E416F7F36BF7 /* BoolExtensionsTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -444,6 +448,7 @@
 				0730392D1AA6B8270091A076 /* Should.swift in Sources */,
 				184C067BB2066035C868D893 /* EquatableMatcher.swift in Sources */,
 				184C0D60E6D0BFBEE29C7953 /* BoolExtensions.swift in Sources */,
+				184C0F0DCE81B4877AE3F1B7 /* BoolExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +476,7 @@
 				07A51D3B1AA2E01E0007DDFC /* XCTestProxy.swift in Sources */,
 				184C09003CBF5ED1217261B8 /* EquatableMatcher.swift in Sources */,
 				184C0D4762C606572CC96A0B /* BoolExtensions.swift in Sources */,
+				184C06C570448753D3F9B285 /* BoolExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
