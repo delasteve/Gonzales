@@ -1,3 +1,3 @@
 public extension Bool {
-  var should: BoolMatcher { return BoolMatcher(self) }
+  var should: EquatableMatcher<Bool> { return EquatableMatcher<Bool>(self) }
 }
