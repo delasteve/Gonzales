@@ -2,9 +2,9 @@ import XCTest
 import Gonzales
 
 class BoolExtensionsTests: XCTestCase {
-  func test_has_property_should_of_type_BoolMatcher() {
+  func test_Bool_has_property_should_of_type_EquatableMatcherBool() {
     var actual = true.should as Any
 
-    (actual is BoolMatcher).should.be.truthy()
+    (actual is EquatableMatcher<Bool>).should.equal(true)
   }
 }

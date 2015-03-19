@@ -13,13 +13,13 @@ class OptionalMatcherTests: XCTestCase {
   func test_exist_does_not_call_xctest_proxy_fail_when_not_nil() {
     optionalMatcher.exist(NSObject())
 
-    xctestProxyMock.failWasCalled.should.be.falsy()
+    xctestProxyMock.failWasCalled.should.equal(false)
   }
 
   func test_exist_calls_xctest_proxy_fail_when_nil() {
     optionalMatcher.exist(NSObject?())
 
-    xctestProxyMock.failWasCalled.should.be.truthy()
+    xctestProxyMock.failWasCalled.should.equal(true)
   }
 
   func test_exist_calls_xctest_proxy_fail_with_pretty_fail_message_when_nil() {

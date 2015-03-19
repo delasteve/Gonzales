@@ -1,3 +1,3 @@
 public extension Int {
-  var should: IntMatcher { return IntMatcher(self) }
+  var should: EquatableMatcher<Int> { return EquatableMatcher<Int>(self) }
 }
